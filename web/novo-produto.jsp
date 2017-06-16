@@ -15,21 +15,20 @@
     <style>
 
 
-	div#corpo {
-	    width: 760px;
-	    margin:0 auto;
+	#corpo {
 
-	    height: 618222;
-	    width: 833px;
 
+	    width: 940px; /*pode usar 1000, depende do tamanho do conteudo*/
+	    height: 970px;
+	    margin: auto;
 
 	    margin-top: 0px;
 	    margin-left: 0px;
 	    border-top-width: 187px;
-	    padding-top: 55px;
-	    padding-left: 65px;
+	    padding-top: 0px;
+	    padding-left: 88px;
 	}
-	
+
     </style>
     <body>
 	<div id="corpo">

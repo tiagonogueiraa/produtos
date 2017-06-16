@@ -1,6 +1,8 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 <style>
+    
+    
     header {
     margin: auto;
     max-width: 800px;
@@ -73,16 +75,25 @@
     #submenu a {
         background-color:gray;
     }
+    
+    
+    #cabecalho {
+	width: 930px;
+	height: 30px;
+	margin: auto;
+	
+    }
 </style>
 
 <div> 
     <header>
+	<div id="cabecalho"> 
 <nav class="dropdownmenu">
     <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Cadastro</a>
             <ul id="submenu">
-                <li><a href="">Produto</a></li>
+                <li><a href="novoProduto.html">Produto</a></li>
                 <li><a href="">Cliente</a></li>
             </ul>
         </li>
@@ -90,5 +101,6 @@
         <li><a href="">Sobre nós</a></li>
     </ul>
 </nav>
+	</div>
         </header>
 </div>
