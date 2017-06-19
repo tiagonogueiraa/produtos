@@ -108,3 +108,13 @@ li:hover ul#submenu {
     height: 500px;
     width: 380px;
 }
+
+.quadroHome {
+    margin: auto;
+    width: 350px;
+    height: 360px;
+    position: relative;
+    top: -497px;
+    left: 123px;
+    right: 0px;
+}
