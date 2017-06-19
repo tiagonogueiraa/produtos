@@ -1,4 +1,11 @@
 
+#geral_home {
+    width: 940px; /*pode usar 1000, depende do tamanho do conteudo*/
+    height: 970px;
+    margin: auto;
+
+}
+
 header {
     margin: auto;
     max-width: 800px;
@@ -80,19 +87,24 @@ li:hover ul#submenu {
 
 }
 
-.produto {
-    width: 930px;
+.nomeLoja {
+    width: 940px;
     height: 90px;
     border: solid 1px;
     margin: auto;
 }
 
 #logo {
-       position: relative;
+    position: relative;
     top: -56px;
     left: 533px;
     width: 267px;
     height: 84px;
     margin: auto;
 
+}
+
+.informacaoEmpresa {
+    height: 500px;
+    width: 380px;
 }

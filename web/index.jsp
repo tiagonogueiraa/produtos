@@ -15,15 +15,27 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <div class="produto">
+	<div id="geral_home"> 
+        <div class="nomeLoja">
 	    <%-- TITULO LOJA --%>
 	    <h3>NOME DA LOJA</h3>
 	    <%-- IMAGEM DE LOGO --%>
 	    <img id="logo" src="imagens/logo loja.jpg" alt="LOGO" title="lOGO SITE" />
 	</div>
-	<div>
-	    <img src=""
+	    <div class="informacaoEmpresa">
+	    
+		<h1>Informações da Empresa</h1>
+		<p>
+		O objetivo deste trabalho é implementar um site para controle de produtos de uma loja virtual de uma
+empresa de varejo.
+		
+		</p>
+	    
 		 
+	</SPAN>
+	    
+	</div>
+	    
 	</div>
     </body>
 </html>
