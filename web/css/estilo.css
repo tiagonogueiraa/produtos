@@ -1,9 +1,8 @@
 
 #geral_home {
-    width: 940px; /*pode usar 1000, depende do tamanho do conteudo*/
-    height: 970px;
-    margin: auto;
-
+    width: 940px;
+    /* height: 970px; */
+    margin: 0 auto;
 }
 
 header {
@@ -104,12 +103,12 @@ li:hover ul#submenu {
 
 }
 
-.informacaoEmpresa {
+/*.informacaoEmpresa {
     height: 500px;
     width: 380px;
-}
+} 
 
-.quadroHome {
+/*.quadroHome {
     margin: auto;
     width: 350px;
     height: 360px;
@@ -117,4 +116,4 @@ li:hover ul#submenu {
     top: -497px;
     left: 123px;
     right: 0px;
-}
+} */
