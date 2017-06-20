@@ -3,7 +3,7 @@
     Created on : 19/06/2017, 21:33:54
     Author     : Júnior
 --%>
-<%  String[] produto1 = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
+<%          String[] produto1 = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
             String[] produto2 = {"2", "Roteador", "TP-Link Wireless 300Mbps TL-WR841N", "79.90"};
             String[] produto3 = {"3", "Hd Externo", "Samsung M3 Portable 1TB Preto", "479.900"};
             String[] produto4 = {"4", "Teclado", "Pisc PS2 Preto ABNT 2", "19.99"};
@@ -106,88 +106,100 @@
     </head>
     <body>
         <div><h1>Produtos</h1></div>
-
         <table class="table">
             <tr>
                 <th>ID</th>
+                <th></th>
                 <th>Nome</th>
                 <th>Descricao</th>
                 <th>Preco</th>
             </tr>
             <tr>
                 <td><%= prod1.getIdProduto() %></td>
-                <td><%= prod1.getNome() %></td>
+                <td><img name="imgprod1" src="imagens/PenDriveSanDisk16GB.jpg" width="75"></td>
+                <td><a href="produtos/PenDriveSanDisk16GB.jsp"><%= prod1.getNome() %></a></td>
                 <td><%= prod1.getDescricao() %></td>
                 <td><%= prod1.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod2.getIdProduto() %></td>
+                <td><img name="imgprod2" src="imagens/RoteadorTPLink300Mbps.jpg" width="75"></td>
                 <td><%= prod2.getNome() %></td>
                 <td><%= prod2.getDescricao() %></td>
                 <td><%= prod2.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod3.getIdProduto() %></td>
+                <td><img name="imgprod3" src="imagens/HdExternoSamsung1TB.jpg" width="75"></td>
                 <td><%= prod3.getNome() %></td>
                 <td><%= prod3.getDescricao() %></td>
                 <td><%= prod3.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod4.getIdProduto() %></td>
+                <td><img name="imgprod4" src="imagens/TecladoPisc.jpg" width="75"></td>
                 <td><%= prod4.getNome() %></td>
                 <td><%= prod4.getDescricao() %></td>
                 <td><%= prod4.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod5.getIdProduto() %></td>
+                <td><img name="imgprod5" src="imagens/MouseMymax.jpg" width="75"></td>
                 <td><%= prod5.getNome() %></td>
                 <td><%= prod5.getDescricao() %></td>
                 <td><%= prod5.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod6.getIdProduto() %></td>
+                <td><img name="imgprod6" src="imagens/AdaptadorWirelessEdup.jpg" width="75"></td>
                 <td><%= prod6.getNome() %></td>
                 <td><%= prod6.getDescricao() %></td>
                 <td><%= prod6.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod7.getIdProduto() %></td>
+                <td><img name="imgprod7" src="imagens/RepetidorTPLink.jpg" width="75"></td>
                 <td><%= prod7.getNome() %></td>
                 <td><%= prod7.getDescricao() %></td>
                 <td><%= prod7.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod8.getIdProduto() %></td>
+                <td><img name="imgprod8" src="imagens/MonitorPhilips.jpg" width="75"></td>
                 <td><%= prod8.getNome() %></td>
                 <td><%= prod8.getDescricao() %></td>
                 <td><%= prod8.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod9.getIdProduto() %></td>
+                <td><img name="imgprod9" src="imagens/MultifuncionalHP.jpg" width="75"></td>
                 <td><%= prod9.getNome() %></td>
                 <td><%= prod9.getDescricao() %></td>
                 <td><%= prod9.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod10.getIdProduto() %></td>
+                <td><img name="imgprod10" src="imagens/CaixaDeSomLite.jpg" width="75"></td>
                 <td><%= prod10.getNome() %></td>
                 <td><%= prod10.getDescricao() %></td>
                 <td><%= prod10.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod11.getIdProduto() %></td>
+                <td><img name="imgprod11" src="imagens/EstabilizadorSMS.jpg" width="75"></td>
                 <td><%= prod11.getNome() %></td>
                 <td><%= prod11.getDescricao() %></td>
                 <td><%= prod11.getPreco() %></td>
             </tr>
             <tr>
                 <td><%= prod12.getIdProduto() %></td>
+                <td><img name="imgprod12" src="imagens/AdaptadorBluetoothDongle.jpg" width="75"></td>
                 <td><%= prod12.getNome() %></td>
                 <td><%= prod12.getDescricao() %></td>
                 <td><%= prod12.getPreco() %></td>
             </tr>
             
         </table>
-
+        
     </body>
 </html>
