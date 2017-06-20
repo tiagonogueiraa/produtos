@@ -3,26 +3,7 @@
     Created on : 19/06/2017, 21:33:54
     Author     : Júnior
 --%>
-
-<%@page import="beans.Produto"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/javascript.js"></script>
-        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <%@include file="WEB-INF/jsfp/menu.jspf" %>
-        <title>Produtos</title>
-    </head>
-    <body>
-        <div><h1>Produtos</h1></div>
-
-        <%  String[] produto1 = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
+<%  String[] produto1 = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
             String[] produto2 = {"2", "Roteador", "TP-Link Wireless 300Mbps TL-WR841N", "79.90"};
             String[] produto3 = {"3", "Hd Externo", "Samsung M3 Portable 1TB Preto", "479.900"};
             String[] produto4 = {"4", "Teclado", "Pisc PS2 Preto ABNT 2", "19.99"};
@@ -107,6 +88,25 @@
             prod12.setDescricao(produto12[2]);
             prod12.setPreco(Double.parseDouble(produto12[3]));
         %>
+        
+<%@page import="beans.Produto"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/javascript.js"></script>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <%@include file="WEB-INF/jsfp/menu.jspf" %>
+        <title>Produtos</title>
+    </head>
+    <body>
+        <div><h1>Produtos</h1></div>
+
         <table class="table">
             <tr>
                 <th>ID</th>
@@ -115,11 +115,78 @@
                 <th>Preco</th>
             </tr>
             <tr>
-                <td><% prod1.getIdProduto(); %></td>
-                <td><% prod1.getNome(); %></td>
-                <td></td>
-                <td></td>
+                <td><%= prod1.getIdProduto() %></td>
+                <td><%= prod1.getNome() %></td>
+                <td><%= prod1.getDescricao() %></td>
+                <td><%= prod1.getPreco() %></td>
             </tr>
+            <tr>
+                <td><%= prod2.getIdProduto() %></td>
+                <td><%= prod2.getNome() %></td>
+                <td><%= prod2.getDescricao() %></td>
+                <td><%= prod2.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod3.getIdProduto() %></td>
+                <td><%= prod3.getNome() %></td>
+                <td><%= prod3.getDescricao() %></td>
+                <td><%= prod3.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod4.getIdProduto() %></td>
+                <td><%= prod4.getNome() %></td>
+                <td><%= prod4.getDescricao() %></td>
+                <td><%= prod4.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod5.getIdProduto() %></td>
+                <td><%= prod5.getNome() %></td>
+                <td><%= prod5.getDescricao() %></td>
+                <td><%= prod5.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod6.getIdProduto() %></td>
+                <td><%= prod6.getNome() %></td>
+                <td><%= prod6.getDescricao() %></td>
+                <td><%= prod6.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod7.getIdProduto() %></td>
+                <td><%= prod7.getNome() %></td>
+                <td><%= prod7.getDescricao() %></td>
+                <td><%= prod7.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod8.getIdProduto() %></td>
+                <td><%= prod8.getNome() %></td>
+                <td><%= prod8.getDescricao() %></td>
+                <td><%= prod8.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod9.getIdProduto() %></td>
+                <td><%= prod9.getNome() %></td>
+                <td><%= prod9.getDescricao() %></td>
+                <td><%= prod9.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod10.getIdProduto() %></td>
+                <td><%= prod10.getNome() %></td>
+                <td><%= prod10.getDescricao() %></td>
+                <td><%= prod10.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod11.getIdProduto() %></td>
+                <td><%= prod11.getNome() %></td>
+                <td><%= prod11.getDescricao() %></td>
+                <td><%= prod11.getPreco() %></td>
+            </tr>
+            <tr>
+                <td><%= prod12.getIdProduto() %></td>
+                <td><%= prod12.getNome() %></td>
+                <td><%= prod12.getDescricao() %></td>
+                <td><%= prod12.getPreco() %></td>
+            </tr>
+            
         </table>
 
     </body>
