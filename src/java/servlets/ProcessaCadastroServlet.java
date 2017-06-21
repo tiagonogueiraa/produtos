@@ -5,19 +5,22 @@
  */
 package servlets;
 
+import beans.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Júnior
  */
-@WebServlet(name = "ProcessaCadastroServlet", urlPatterns = {"/dados-do-cliente.html"})
+@WebServlet(name = "ProcessaCadastroServlet", urlPatterns = {"/processaCadastro.html"})
 public class ProcessaCadastroServlet extends HttpServlet {
 
     /**
@@ -30,21 +33,48 @@ public class ProcessaCadastroServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ProcessaCadastroServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ProcessaCadastroServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+	    throws ServletException, IOException {
+
+	RequestDispatcher rd = null;
+
+//	Carro carro = new Carro();
+//                    carro.setPlaca(request.getParameter("vPlaca"));
+//                    carro.setNome(request.getParameter("vNome"));
+//                    carro.setModelo(request.getParameter("vModelo"));
+//                    carro.setPreco(request.getParameter("vPreco"));
+//                    carro.setValorDiaria(Float.parseFloat(request.getParameter("vDiaria").toString()));                    
+//                    
+//                    HttpSession session = request.getSession(true);
+//                    session.setAttribute("meuCarro", carro);
+//                    rd = request.getRequestDispatcher("aluguelCarro.jsp");
+//	
+	
+	Cliente cliente = new Cliente();
+	
+	cliente.setNome(request.getParameter("nome"));
+	cliente.setRua(request.getParameter("rua"));
+	cliente.setCidade(request.getParameter("cidade"));
+	cliente.setEstado(request.getParameter("estado"));
+	cliente.setCep(request.getParameter("cep"));
+	cliente.setTelefoneResidencial(request.getParameter("telefoneResidencial"));
+	cliente.setProfissao(request.getParameter("Profissao"));
+	cliente.setDataNascimento(request.getParameter("dataNascimento"));
+	cliente.setCpf(request.getParameter("cpf"));
+	cliente.setEmail(request.getParameter("email"));
+	cliente.setEstadoCivil(request.getParameter("estadoCivil"));
+	cliente.setSexo(request.getParameter("sexo"));
+	cliente.setObservacao(request.getParameter("observacoes"));
+	
+	HttpSession session = request.getSession(true);
+	session.setAttribute("cliente", cliente);
+	
+	rd = request.getRequestDispatcher("demonstrativoCliente.jsp");
+	
+	
+	rd.forward(request, response);
     }
+    
+    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -57,8 +87,8 @@ public class ProcessaCadastroServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+	    throws ServletException, IOException {
+	processRequest(request, response);
     }
 
     /**
@@ -71,8 +101,8 @@ public class ProcessaCadastroServlet extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+	    throws ServletException, IOException {
+	processRequest(request, response);
     }
 
     /**
@@ -82,7 +112,7 @@ public class ProcessaCadastroServlet extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+	return "Short description";
     }// </editor-fold>
 
 }

@@ -42,9 +42,8 @@ public class buscarProdutoServlet extends HttpServlet {
 	    throws ServletException, IOException {
 	
 	RequestDispatcher rd = null;
-
-	String[] produto1 = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
-	String[] produto2 = {"2", "Roteador", "TP-Link Wireless 300Mbps TL-WR841N", "79.90"};
+	String produto1[] = {"1", "Pen Drive", "Sandisk Cruzer Blade 16GB  Preto e Vermelho", "19.90"};
+	String produto2[] = {"2", "Roteador", "TP-Link Wireless 300Mbps TL-WR841N", "79.90"};
 	String[] produto3 = {"3", "Hd Externo", "Samsung M3 Portable 1TB Preto", "479.900"};
 	String[] produto4 = {"4", "Teclado", "Pisc PS2 Preto ABNT 2", "19.99"};
 	String[] produto5 = {"5", "Mouse", "Mymax Óptico USB Preto", "9.99"};
@@ -71,6 +70,8 @@ public class buscarProdutoServlet extends HttpServlet {
 	listaProduto.add(produto12);
 	
    
+	
+	
 	
 	String id;
 	if (request.getParameter("id") != null) {
