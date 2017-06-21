@@ -105,7 +105,10 @@
         <title>Produtos</title>
     </head>
     <body>
-        <div><h1>Produtos</h1></div>
+	<div id="geral_home">
+        <div>
+	    
+	    <h1>Produtos</h1></div>
         <table class="table">
             <tr>
                 <th>ID</th>
@@ -117,7 +120,7 @@
             <tr>
                 <td><%= prod1.getIdProduto() %></td>
                 <td><img name="imgprod1" src="imagens/PenDriveSanDisk16GB.jpg" width="75"></td>
-                <td><a href="produtos/PenDriveSanDisk16GB.jsp"><%= prod1.getNome() %></a></td>
+                <td><a href="buscaProd.html?id=1"><%= prod1.getNome() %></a></td>
                 <td><%= prod1.getDescricao() %></td>
                 <td><%= prod1.getPreco() %></td>
             </tr>
@@ -200,6 +203,10 @@
             </tr>
             
         </table>
+	    
+	    
+	</div>
         
+	    
     </body>
 </html>
